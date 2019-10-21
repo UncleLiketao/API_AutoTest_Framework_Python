@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from jsonschema import validate
-from Common.params import Params
+from Common.Params import Params
 from Conf.Config import Config
 
 
@@ -13,9 +13,10 @@ class TestIsConfig:
         :return:
         """
         conf = Config()
+        params = Params()
+
         host = "http://gossapit.xgimi.com"
         api_url = host + "/child/broadcast/list"
-        params = Params()
         params.add_param("broadcastScene", "1")
         params = params.encrypt_data()
         headers = {"Content-Type": "application/x-www-form-urlencoded"}
@@ -29,9 +30,10 @@ class TestIsConfig:
         :return:
         """
         conf = Config()
+        params = Params()
+
         host = "http://gossapit.xgimi.com"
         api_url = host + "/child/broadcast/list"
-        params = Params()
         params.add_param("broadcastScene", "1")
         params = params.encrypt_data()
         headers = {"Content-Type": "application/x-www-form-urlencoded"}

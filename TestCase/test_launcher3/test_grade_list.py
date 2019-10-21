@@ -6,7 +6,7 @@ import json
 import os
 import requests
 from jsonschema import validate
-from Common.params import Params
+from Common.Params import Params
 from Conf.Config import Config
 
 schema_path = os.path.abspath('..') + '\\' + 'JSONSchema' + '\\'
