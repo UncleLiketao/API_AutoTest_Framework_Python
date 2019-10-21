@@ -7,6 +7,7 @@ import os
 import requests
 from jsonschema import validate
 from Common.params import Params
+from Conf.Config import Config
 
 schema_path = os.path.abspath('..') + '\\' + 'JSONSchema' + '\\'
 print(schema_path)
@@ -31,11 +32,12 @@ class TestGradeList:
         用例描述：年级列表接口默认参数返回数据JsonSchema验证
         :return:
         """
+        conf = Config()
         host = "http://gossapit.xgimi.com/"
         api_url = host + "grade/list"
         params = Params().encrypt_data()
         headers = {"Content-Type": "application/x-www-form-urlencoded"}
-        schema = json.load(open(schema_path + "grade_list_schema.json"))
+        schema = json.load(open(conf.json_schema_path + "/grade_list_schema.json"))
 
         res = requests.post(api_url, params=params, headers=headers)
         assert validate(instance=res.json(), schema=schema) is None

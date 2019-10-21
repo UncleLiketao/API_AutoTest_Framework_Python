@@ -3,9 +3,7 @@ import os
 import requests
 from jsonschema import validate
 from Common.params import Params
-
-schema_path = os.path.abspath('..') + '\\' + 'JSONSchema' + '\\'
-print(schema_path)
+from Conf.Config import Config
 
 
 class TestIsConfig:
@@ -14,6 +12,7 @@ class TestIsConfig:
         用例描述：【新版儿童模式】获取画面静止时随机播放内容接口默认参数状态码返回
         :return:
         """
+        conf = Config()
         host = "http://gossapit.xgimi.com"
         api_url = host + "/child/broadcast/list"
         params = Params()
@@ -29,6 +28,7 @@ class TestIsConfig:
         用例描述：【新版儿童模式】获取画面静止时随机播放内容接口默认参数返回数据JsonSchema验证
         :return:
         """
+        conf = Config()
         host = "http://gossapit.xgimi.com"
         api_url = host + "/child/broadcast/list"
         params = Params()
@@ -37,7 +37,7 @@ class TestIsConfig:
         headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
         res = requests.post(api_url, params=params, headers=headers)
-        schema = json.load(open(schema_path + "child_broadcast_list_schema.json"))
+        schema = json.load(open(conf.json_schema_path + "/child_broadcast_list_schema.json"))
         assert validate(instance=res.json(), schema=schema) is None
 
 
