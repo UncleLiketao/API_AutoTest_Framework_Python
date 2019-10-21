@@ -24,7 +24,7 @@ class TestIsConfig:
         res = requests.post(api_url, params=params, headers=headers)
         assert res.status_code == 200
 
-    def test_schema_validate(self):
+    def test_jsonschema_validate(self):
         """
         用例描述：【新版儿童模式】获取画面静止时随机播放内容接口默认参数返回数据JsonSchema验证
         :return:
@@ -37,10 +37,11 @@ class TestIsConfig:
         headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
         res = requests.post(api_url, params=params, headers=headers)
-        schema = json.load(open(schema_path + "grade_list_schema.json"))
+        schema = json.load(open(schema_path + "child_broadcast_list_schema.json"))
         assert validate(instance=res.json(), schema=schema) is None
 
 
 if __name__ == '__main__':
     testIsConfig = TestIsConfig()
     testIsConfig.test_repsonse_code()
+    testIsConfig.test_jsonschema_validate()
