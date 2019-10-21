@@ -41,6 +41,7 @@ class Config:
         self.conf_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.ini')
         self.xml_report_path = Config.path_dir+'/Report/xml'
         self.html_report_path = Config.path_dir+'/Report/html'
+        self.json_schema_path = Config.path_dir+'/TestCase/JSONschema'
 
         if not os.path.exists(self.conf_path):
             raise FileNotFoundError("请确保配置文件存在！")
