@@ -1,16 +1,9 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2019/10/17 下午4:14
-# @Author  : LiKeTao
-# @File    : test_grade_list.py
 import json
-import os
 import requests
 from jsonschema import validate
-from Common.Params import Params
+from Common.params import Params
 from Conf.Config import Config
-
-schema_path = os.path.abspath('..') + '\\' + 'JSONSchema' + '\\'
-print(schema_path)
+from Common import Assert
 
 
 class TestGradeList:
@@ -19,13 +12,16 @@ class TestGradeList:
         用例描述：年级列表接口默认参数状态码返回
         :return:
         """
-        host = "http://gossapit.xgimi.com"
+        conf = Config()
+        test = Assert.Assertions()
+
+        host = conf.debug_gossapi_host
         api_url = host + "/grade/list"
         params = Params().encrypt_data()
-        headers = {"Content-Type": "application/x-www-form-urlencoded"}
+        headers = conf.debug_headers
 
         res = requests.post(api_url, params=params, headers=headers)
-        assert res.status_code == 200
+        assert test.assert_code(res.status_code, 200)
 
     def test_jsonschema_validate(self):
         """
@@ -33,17 +29,19 @@ class TestGradeList:
         :return:
         """
         conf = Config()
-        host = "http://gossapit.xgimi.com/"
-        api_url = host + "grade/list"
+        test = Assert.Assertions()
+
+        host = conf.debug_gossapi_host
+        api_url = host + "/grade/list"
         params = Params().encrypt_data()
-        headers = {"Content-Type": "application/x-www-form-urlencoded"}
+        headers = conf.debug_headers
         schema = json.load(open(conf.json_schema_path + "/grade_list_schema.json"))
 
         res = requests.post(api_url, params=params, headers=headers)
-        assert validate(instance=res.json(), schema=schema) is None
+        assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__ == '__main__':
+if __name__=='__main__':
     testGradeList = TestGradeList()
     testGradeList.test_repsonse_code()
     testGradeList.test_jsonschema_validate()

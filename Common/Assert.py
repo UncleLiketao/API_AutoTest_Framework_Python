@@ -10,6 +10,7 @@
 """
 from Common import Log
 from Common import Consts
+from jsonschema import validate
 import json
 
 
@@ -105,4 +106,19 @@ class Assertions:
 
             raise
 
+    def assert_jsonschema(self, data, expected_schema_path):
+        """
+        验证response body格式与jsonschema一致
+        :param data:
+        :param expected_schema_path:
+        :return:
+        """
+        try:
+            assert validate(instance=data, schema=expected_schema_path) is None
+            return True
 
+        except:
+            self.log.error("Response data is invalid")
+            Consts.RESULT_LIST.append('fail')
+
+            raise

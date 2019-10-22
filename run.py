@@ -6,7 +6,6 @@ from Conf import Config
 if __name__ == '__main__':
     conf = Config.Config()
     log = Log.MyLog()
-    log.info('初始化配置文件, path=' + conf.conf_path)
 
     shell = Shell.Shell()
     xml_report_path = conf.xml_report_path
