@@ -1,6 +1,5 @@
 import json
 import requests
-from jsonschema import validate
 from Common.params import Params
 from Conf.Config import Config
 from Common import Assert
@@ -42,6 +41,4 @@ class TestGradeList:
 
 
 if __name__=='__main__':
-    testGradeList = TestGradeList()
-    testGradeList.test_repsonse_code()
-    testGradeList.test_jsonschema_validate()
+    pass
