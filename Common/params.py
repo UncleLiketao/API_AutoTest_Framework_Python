@@ -14,6 +14,11 @@ class Params(object):
         self.commn_params[key] = value
         return self.commn_params
 
+    def add_req_data(self, data: dict):
+        for key in data.keys():
+            self.commn_params[key] = data[key]
+        return self.commn_params
+
     def encrypt_data(self):
         before_encrypt_data = json.dumps(self.commn_params)
         params = aes_crypt.AesCrypt().aes_encode(before_encrypt_data)
@@ -22,6 +27,7 @@ class Params(object):
 
 
 if __name__=='__main__':
-    Params().add_param("sourceId", "10001")
-    data = Params().encrypt_data()
-    print(data)
+    # Params().add_param("sourceId", "10001")
+    print(Params().add_req_data({"sourceId": "10001", }))
+    # data = Params().encrypt_data()
+    # print(data)

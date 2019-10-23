@@ -1,0 +1,174 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        61483438.4852038
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "sit culpa dolor"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "total",
+        "list"
+      ],
+      "properties": {
+        "total": {
+          "$id": "#/properties/data/properties/total",
+          "type": "number",
+          "title": "The Total Schema",
+          "default": 0.0,
+          "examples": [
+            51485091.88408533
+          ]
+        },
+        "list": {
+          "$id": "#/properties/data/properties/list",
+          "type": "array",
+          "title": "The List Schema",
+          "items": {
+            "$id": "#/properties/data/properties/list/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "title",
+              "img",
+              "w",
+              "h",
+              "op_url",
+              "op_type",
+              "op_apkurl",
+              "op_apktip",
+              "op_apkname",
+              "op_apkpackage"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/data/properties/list/items/properties/title",
+                "type": "string",
+                "title": "The Title Schema",
+                "default": "",
+                "examples": [
+                  "laboris incididunt irure adipisicing proident"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "img": {
+                "$id": "#/properties/data/properties/list/items/properties/img",
+                "type": "string",
+                "title": "The Img Schema",
+                "default": "",
+                "examples": [
+                  "ullamco et proident"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "w": {
+                "$id": "#/properties/data/properties/list/items/properties/w",
+                "type": "number",
+                "title": "The W Schema",
+                "default": 0.0,
+                "examples": [
+                  -30265852.37498796
+                ]
+              },
+              "h": {
+                "$id": "#/properties/data/properties/list/items/properties/h",
+                "type": "number",
+                "title": "The H Schema",
+                "default": 0.0,
+                "examples": [
+                  21237254.446590766
+                ]
+              },
+              "op_url": {
+                "$id": "#/properties/data/properties/list/items/properties/op_url",
+                "type": "string",
+                "title": "The Op_url Schema",
+                "default": "",
+                "examples": [
+                  "esse culpa ipsum adipisicing tem"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_type": {
+                "$id": "#/properties/data/properties/list/items/properties/op_type",
+                "type": "number",
+                "title": "The Op_type Schema",
+                "default": 0.0,
+                "examples": [
+                  -62369390.71585361
+                ]
+              },
+              "op_apkurl": {
+                "$id": "#/properties/data/properties/list/items/properties/op_apkurl",
+                "type": "string",
+                "title": "The Op_apkurl Schema",
+                "default": "",
+                "examples": [
+                  "commodo fugiat"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apktip": {
+                "$id": "#/properties/data/properties/list/items/properties/op_apktip",
+                "type": "string",
+                "title": "The Op_apktip Schema",
+                "default": "",
+                "examples": [
+                  "enim anim ut"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apkname": {
+                "$id": "#/properties/data/properties/list/items/properties/op_apkname",
+                "type": "string",
+                "title": "The Op_apkname Schema",
+                "default": "",
+                "examples": [
+                  "tempor"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apkpackage": {
+                "$id": "#/properties/data/properties/list/items/properties/op_apkpackage",
+                "type": "string",
+                "title": "The Op_apkpackage Schema",
+                "default": "",
+                "examples": [
+                  "nulla amet"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

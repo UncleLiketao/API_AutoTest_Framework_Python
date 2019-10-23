@@ -31,7 +31,7 @@ class AesCrypt(object):
 
 
 if __name__ == '__main__':
-    encrypt_data = "EYGJdmKfOXGe0JS3BAmlpAZSAypHuzesHHvKJBh5RXVXoSz/jrJUKCoujH+SOHXzLIGjJdB6562uYlTjHpbtf1h2Ov3h/xEC1b6GxXCN10YOUxipFRtIH8L53hv25Gt6VQQJND5Sp67Y4nEBvVhr9DRncyTU6VF3vlpleO08H+Dm2OjTysd7nRwi6UP4gVgJTekmUBigSQb3TIOVTRK5N6l4aF3yHXoLGnM6jShUTtLQ9ZQ+rlgsDSBAT6HN+1SWZuBuVoYzi9YNABPzwxU2ZPFYRZLMZhBQPW8pCQP7Z0OUCrfBNLpFNh49U6oM9asDNfqaLxzB6TbsboMQ1eSBlQ=="
+    encrypt_data = "EYGJdmKfOXGe0JS3BAmlpAZSAypHuzesHHvKJBh5RXVXoSz/jrJUKCoujH+SOHXzLIGjJdB6562uYlTjHpbtf1h2Ov3h/xEC1b6GxXCN10YOUxipFRtIH8L53hv25Gt6VQQJND5Sp67Y4nEBvVhr9DRncyTU6VF3vlpleO08H+Dm2OjTysd7nRwi6UP4gVgJTekmUBigSQb3TIOVTRK5N6l4aF3yHXoLGnM6jShUTtLQ9ZQ+rlgsDSBAT6HN+1SWZuBuVoYzi9YNABPzwxU2ZPFYRZLMZhBQPW8pCQP7Z0NeLetltaDHe1JsXBOvdG6w2hB3c0om5ErcnL9Ov2Qt0Cv4wvJA4liuDHhCqyaA6LE2ulFz0rRS2/bbX24zUB/QJMrtkAeNgY2/D5+OxOCi8w=="
     Query_data = {'gimiPid': 'EHFAJEF79TAU', 'gimiDevice': 'aosp_synsepalum_YN', 'xgimiDeviceName': 'synsepalum_Y',
                   'deviceMac': '80-0B-52-02-44-26', 'systemVersion': 'v1.6.23', 'launcherVersionCode': 1510,
                   'androidVersion': 'Android 6.0', 'systemIsRoot': False}

@@ -1,0 +1,272 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        -11240361.670969531
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "consectetur Lorem aliqua id"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "total",
+        "reminder",
+        "guide",
+        "guideTips",
+        "isRecommend",
+        "ui_mode",
+        "videos"
+      ],
+      "properties": {
+        "total": {
+          "$id": "#/properties/data/properties/total",
+          "type": "number",
+          "title": "The Total Schema",
+          "default": 0.0,
+          "examples": [
+            -93516134.98924154
+          ]
+        },
+        "reminder": {
+          "$id": "#/properties/data/properties/reminder",
+          "type": "string",
+          "title": "The Reminder Schema",
+          "default": "",
+          "examples": [
+            "tempor ipsum Lorem"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "guide": {
+          "$id": "#/properties/data/properties/guide",
+          "type": "string",
+          "title": "The Guide Schema",
+          "default": "",
+          "examples": [
+            "ut in Lorem"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "guideTips": {
+          "$id": "#/properties/data/properties/guideTips",
+          "type": "string",
+          "title": "The Guidetips Schema",
+          "default": "",
+          "examples": [
+            "ex mollit elit dolor"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "isRecommend": {
+          "$id": "#/properties/data/properties/isRecommend",
+          "type": "string",
+          "title": "The Isrecommend Schema",
+          "default": "",
+          "examples": [
+            "aute quis"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "ui_mode": {
+          "$id": "#/properties/data/properties/ui_mode",
+          "type": "number",
+          "title": "The Ui_mode Schema",
+          "default": 0.0,
+          "examples": [
+            -48805884.625205785
+          ]
+        },
+        "videos": {
+          "$id": "#/properties/data/properties/videos",
+          "type": "array",
+          "title": "The Videos Schema",
+          "items": {
+            "$id": "#/properties/data/properties/videos/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "title",
+              "img",
+              "w",
+              "h",
+              "op_url",
+              "op_type",
+              "op_apkurl",
+              "op_apktip",
+              "op_apkname",
+              "op_apkpackage",
+              "id",
+              "group",
+              "from",
+              "source_from"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/data/properties/videos/items/properties/title",
+                "type": "string",
+                "title": "The Title Schema",
+                "default": "",
+                "examples": [
+                  "voluptate elit labore"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "img": {
+                "$id": "#/properties/data/properties/videos/items/properties/img",
+                "type": "string",
+                "title": "The Img Schema",
+                "default": "",
+                "examples": [
+                  "aliquip nostrud tempor"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "w": {
+                "$id": "#/properties/data/properties/videos/items/properties/w",
+                "type": "number",
+                "title": "The W Schema",
+                "default": 0.0,
+                "examples": [
+                  76090227.97581533
+                ]
+              },
+              "h": {
+                "$id": "#/properties/data/properties/videos/items/properties/h",
+                "type": "number",
+                "title": "The H Schema",
+                "default": 0.0,
+                "examples": [
+                  -25092159.87421514
+                ]
+              },
+              "op_url": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_url",
+                "type": "string",
+                "title": "The Op_url Schema",
+                "default": "",
+                "examples": [
+                  "ad"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_type": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_type",
+                "type": "number",
+                "title": "The Op_type Schema",
+                "default": 0.0,
+                "examples": [
+                  22673833.42414178
+                ]
+              },
+              "op_apkurl": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_apkurl",
+                "type": "string",
+                "title": "The Op_apkurl Schema",
+                "default": "",
+                "examples": [
+                  "proident cupidatat dolor"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apktip": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_apktip",
+                "type": "string",
+                "title": "The Op_apktip Schema",
+                "default": "",
+                "examples": [
+                  "sed fugiat sunt E"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apkname": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_apkname",
+                "type": "string",
+                "title": "The Op_apkname Schema",
+                "default": "",
+                "examples": [
+                  "eu voluptate adipisicing"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "op_apkpackage": {
+                "$id": "#/properties/data/properties/videos/items/properties/op_apkpackage",
+                "type": "string",
+                "title": "The Op_apkpackage Schema",
+                "default": "",
+                "examples": [
+                  "laboris qui ullamco sit"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "id": {
+                "$id": "#/properties/data/properties/videos/items/properties/id",
+                "type": "string",
+                "title": "The Id Schema",
+                "default": "",
+                "examples": [
+                  "ut sed sunt"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "group": {
+                "$id": "#/properties/data/properties/videos/items/properties/group",
+                "type": "string",
+                "title": "The Group Schema",
+                "default": "",
+                "examples": [
+                  "anim Ut"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "from": {
+                "$id": "#/properties/data/properties/videos/items/properties/from",
+                "type": "string",
+                "title": "The From Schema",
+                "default": "",
+                "examples": [
+                  "sunt nisi"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "source_from": {
+                "$id": "#/properties/data/properties/videos/items/properties/source_from",
+                "type": "string",
+                "title": "The Source_from Schema",
+                "default": "",
+                "examples": [
+                  "eu consequat"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
