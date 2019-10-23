@@ -1,0 +1,95 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        -71543317.93461592
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "cillum nulla mollit Lorem"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "access_token",
+        "refresh_token",
+        "expires_in",
+        "login_status",
+        "openid"
+      ],
+      "properties": {
+        "access_token": {
+          "$id": "#/properties/data/properties/access_token",
+          "type": "string",
+          "title": "The Access_token Schema",
+          "default": "",
+          "examples": [
+            "sit sint"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "refresh_token": {
+          "$id": "#/properties/data/properties/refresh_token",
+          "type": "string",
+          "title": "The Refresh_token Schema",
+          "default": "",
+          "examples": [
+            "veniam Excepteur esse labore dolore"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "expires_in": {
+          "$id": "#/properties/data/properties/expires_in",
+          "type": "number",
+          "title": "The Expires_in Schema",
+          "default": 0.0,
+          "examples": [
+            11458767.651820704
+          ]
+        },
+        "login_status": {
+          "$id": "#/properties/data/properties/login_status",
+          "type": "integer",
+          "title": "The Login_status Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "openid": {
+          "$id": "#/properties/data/properties/openid",
+          "type": "string",
+          "title": "The Openid Schema",
+          "default": "",
+          "examples": [
+            "in"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}

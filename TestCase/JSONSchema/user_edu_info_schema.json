@@ -1,0 +1,93 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        34664165.45462784
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "consectetur ipsum officia quis labori"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "isSendLoginEduVip",
+        "eduVipExpire",
+        "isEduVip",
+        "gradeId",
+        "gradeName"
+      ],
+      "properties": {
+        "isSendLoginEduVip": {
+          "$id": "#/properties/data/properties/isSendLoginEduVip",
+          "type": "number",
+          "title": "The Issendlogineduvip Schema",
+          "default": 0.0,
+          "examples": [
+            4490344.029019728
+          ]
+        },
+        "eduVipExpire": {
+          "$id": "#/properties/data/properties/eduVipExpire",
+          "type": "number",
+          "title": "The Eduvipexpire Schema",
+          "default": 0.0,
+          "examples": [
+            -84125082.11354081
+          ]
+        },
+        "isEduVip": {
+          "$id": "#/properties/data/properties/isEduVip",
+          "type": "number",
+          "title": "The Iseduvip Schema",
+          "default": 0.0,
+          "examples": [
+            -15407322.164500356
+          ]
+        },
+        "gradeId": {
+          "$id": "#/properties/data/properties/gradeId",
+          "type": "number",
+          "title": "The Gradeid Schema",
+          "default": 0.0,
+          "examples": [
+            13761018.733522251
+          ]
+        },
+        "gradeName": {
+          "$id": "#/properties/data/properties/gradeName",
+          "type": "string",
+          "title": "The Gradename Schema",
+          "default": "",
+          "examples": [
+            "enim cupidatat anim"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }
+  }
+}
