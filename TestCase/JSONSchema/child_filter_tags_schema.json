@@ -1,0 +1,116 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        -59070672.16449091
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "irure non"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "filters"
+      ],
+      "properties": {
+        "filters": {
+          "$id": "#/properties/data/properties/filters",
+          "type": "array",
+          "title": "The Filters Schema",
+          "items": {
+            "$id": "#/properties/data/properties/filters/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "k",
+              "v",
+              "tags"
+            ],
+            "properties": {
+              "k": {
+                "$id": "#/properties/data/properties/filters/items/properties/k",
+                "type": "string",
+                "title": "The K Schema",
+                "default": "",
+                "examples": [
+                  "proident ut incididunt"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "v": {
+                "$id": "#/properties/data/properties/filters/items/properties/v",
+                "type": "string",
+                "title": "The V Schema",
+                "default": "",
+                "examples": [
+                  "incididunt ea dolore sed"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "tags": {
+                "$id": "#/properties/data/properties/filters/items/properties/tags",
+                "type": "array",
+                "title": "The Tags Schema",
+                "items": {
+                  "$id": "#/properties/data/properties/filters/items/properties/tags/items",
+                  "type": "object",
+                  "title": "The Items Schema",
+                  "required": [
+                    "k",
+                    "v"
+                  ],
+                  "properties": {
+                    "k": {
+                      "$id": "#/properties/data/properties/filters/items/properties/tags/items/properties/k",
+                      "type": "string",
+                      "title": "The K Schema",
+                      "default": "",
+                      "examples": [
+                        "occaecat sed et culpa eu"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "v": {
+                      "$id": "#/properties/data/properties/filters/items/properties/tags/items/properties/v",
+                      "type": "string",
+                      "title": "The V Schema",
+                      "default": "",
+                      "examples": [
+                        "veniam commodo non"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,24 +10,23 @@ class Params(object):
             'deviceMac': '80-0B-52-02-44-26', 'systemVersion': 'v1.6.23', 'launcherVersionCode': 1510,
         }
 
-    def add_param(self, key, value):
-        self.commn_params[key] = value
-        return self.commn_params
-
-    def add_req_data(self, data: dict):
+    def encrypt_data(self, data=None):
+        if data is None:
+            data = {}
         for key in data.keys():
             self.commn_params[key] = data[key]
-        return self.commn_params
-
-    def encrypt_data(self):
         before_encrypt_data = json.dumps(self.commn_params)
         params = aes_crypt.AesCrypt().aes_encode(before_encrypt_data)
         requests_data = {"params": "%s" % params}
         return requests_data
 
+    def non_encrypted_data(self, data: dict):
+        requests_data = {"params": "%s" % json.dumps(data)}
+        return requests_data
+
 
 if __name__=='__main__':
-    # Params().add_param("sourceId", "10001")
-    print(Params().add_req_data({"sourceId": "10001", }))
+    req_data = Params().encrypt_data({"source": "iqiyi", "dockId": "1", "gender": "1", "ageDuration": "1"})
+    print(req_data)
     # data = Params().encrypt_data()
     # print(data)

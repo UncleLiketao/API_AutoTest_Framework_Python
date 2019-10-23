@@ -5,42 +5,23 @@ from Conf.Config import Config
 from Common import Assert
 
 
-class TestCourseDetail:
-    def test_response_code(self):
+class TestUserEduInfo:
+    def test_repsonse_data_format(self):
         """
         用例描述：用户教育会员信息接口状态码返回
         :return:
         """
         conf = Config()
-        params = Params()
         test = Assert.Assertions()
 
         host = conf.debug_gossapi_host
         api_url = host + "/userEdu/info"
-        params.add_param("openid", "jkh54gh2j3g563gc673jh")
-        params = params.encrypt_data()
+        params = Params().encrypt_data({"openid": "8c3484c9889525d2edb171b996686ecd"})
         headers = conf.debug_headers
 
+        schema = json.load(open(conf.json_schema_path + "/user_edu_info_schema.json"))
         res = requests.post(api_url, params=params, headers=headers)
         assert test.assert_code(res.status_code, 200)
-
-    def test_jsonschema_validate(self):
-        """
-        用例描述：用户教育会员信息接口返回数据JsonSchema验证
-        :return:
-        """
-        conf = Config()
-        params = Params()
-        test = Assert.Assertions()
-
-        host = conf.debug_gossapi_host
-        api_url = host + "/userEdu/info"
-        params.add_param("openid", "jkh54gh2j3g563gc673jh")
-        params = params.encrypt_data()
-        headers = conf.debug_headers
-        schema = json.load(open(conf.json_schema_path + "/user_edu_info_schema.json"))
-
-        res = requests.post(api_url, params=params, headers=headers)
         assert test.assert_jsonschema(res.json(), schema)
 
 

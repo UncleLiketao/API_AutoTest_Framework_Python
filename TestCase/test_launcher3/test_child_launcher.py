@@ -6,47 +6,25 @@ from Common import Assert
 
 
 class TestChildLauncher:
-    def test_repsonse_code(self):
+    def test_repsonse_data_format(self):
         """
         用例描述：【新版儿童模式】桌面主页接口默认参数状态码返回
         :return:
         """
         conf = Config()
-        params = Params()
         test = Assert.Assertions()
 
         host = conf.debug_gossapi_host
         api_url = host + "/child/launcher"
-        params.add_param("gender", "1")
-        params.add_param("ageDuration", "1")
-
-        params = params.encrypt_data()
         headers = conf.debug_headers
-
-        res = requests.post(api_url, params=params, headers=headers)
-        assert test.assert_code(res.status_code, 200)
-
-    def test_jsonschema_validate(self):
-        """
-        用例描述：【新版儿童模式】桌面主页接口默认参数返回数据JsonSchema验证
-        :return:
-        """
-        conf = Config()
-        params = Params()
-        test = Assert.Assertions()
-
-        host = conf.debug_gossapi_host
-        api_url = host + "/child/launcher"
-        params.add_param("gender", "1")
-        params.add_param("ageDuration", "1")
-
-        params = params.encrypt_data()
-        headers = conf.debug_headers
+        params = Params().encrypt_data({"gender": 1, "ageDuration": 2})
 
         res = requests.post(api_url, params=params, headers=headers)
         schema = json.load(open(conf.json_schema_path + "/child_launcher_schema.json"))
+
+        assert test.assert_code(res.status_code, 200)
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__ == '__main__':
+if __name__=='__main__':
     pass

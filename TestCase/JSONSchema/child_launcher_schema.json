@@ -1,0 +1,230 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        -7918890.028479099
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "consectetur Duis Lorem nulla"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "title",
+          "img",
+          "classify",
+          "items"
+        ],
+        "properties": {
+          "title": {
+            "$id": "#/properties/data/items/properties/title",
+            "type": "string",
+            "title": "The Title Schema",
+            "default": "",
+            "examples": [
+              "in sed ut ad"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "img": {
+            "$id": "#/properties/data/items/properties/img",
+            "type": "string",
+            "title": "The Img Schema",
+            "default": "",
+            "examples": [
+              "sed ad magna est"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "classify": {
+            "$id": "#/properties/data/items/properties/classify",
+            "type": "number",
+            "title": "The Classify Schema",
+            "default": 0.0,
+            "examples": [
+              68427332.86834237
+            ]
+          },
+          "items": {
+            "$id": "#/properties/data/items/properties/items",
+            "type": "array",
+            "title": "The Items Schema",
+            "items": {
+              "$id": "#/properties/data/items/properties/items/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "title",
+                "poster",
+                "style",
+                "width",
+                "height",
+                "opType",
+                "intent",
+                "opApkName",
+                "opApkPkg",
+                "opApkUrl",
+                "x",
+                "y",
+                "showTitle"
+              ],
+              "properties": {
+                "title": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/title",
+                  "type": "string",
+                  "title": "The Title Schema",
+                  "default": "",
+                  "examples": [
+                    "aliquip amet ut"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "poster": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/poster",
+                  "type": "string",
+                  "title": "The Poster Schema",
+                  "default": "",
+                  "examples": [
+                    "consequat incididunt"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "style": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/style",
+                  "type": "number",
+                  "title": "The Style Schema",
+                  "default": 0.0,
+                  "examples": [
+                    -23542656.48084879
+                  ]
+                },
+                "width": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/width",
+                  "type": "number",
+                  "title": "The Width Schema",
+                  "default": 0.0,
+                  "examples": [
+                    27791460.771341026
+                  ]
+                },
+                "height": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/height",
+                  "type": "number",
+                  "title": "The Height Schema",
+                  "default": 0.0,
+                  "examples": [
+                    19123498.71323152
+                  ]
+                },
+                "opType": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/opType",
+                  "type": "number",
+                  "title": "The Optype Schema",
+                  "default": 0.0,
+                  "examples": [
+                    -80679185.18822585
+                  ]
+                },
+                "intent": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/intent",
+                  "type": "string",
+                  "title": "The Intent Schema",
+                  "default": "",
+                  "examples": [
+                    "proident velit"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "opApkName": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/opApkName",
+                  "type": "string",
+                  "title": "The Opapkname Schema",
+                  "default": "",
+                  "examples": [
+                    "id aute nulla"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "opApkPkg": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/opApkPkg",
+                  "type": "string",
+                  "title": "The Opapkpkg Schema",
+                  "default": "",
+                  "examples": [
+                    "sunt sint adipisicing proident"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "opApkUrl": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/opApkUrl",
+                  "type": "string",
+                  "title": "The Opapkurl Schema",
+                  "default": "",
+                  "examples": [
+                    "deserunt aliqua sint"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "x": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/x",
+                  "type": "number",
+                  "title": "The X Schema",
+                  "default": 0.0,
+                  "examples": [
+                    35021208.37760553
+                  ]
+                },
+                "y": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/y",
+                  "type": "number",
+                  "title": "The Y Schema",
+                  "default": 0.0,
+                  "examples": [
+                    47661138.55316365
+                  ]
+                },
+                "showTitle": {
+                  "$id": "#/properties/data/items/properties/items/items/properties/showTitle",
+                  "type": "number",
+                  "title": "The Showtitle Schema",
+                  "default": 0.0,
+                  "examples": [
+                    91375842.24866056
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
