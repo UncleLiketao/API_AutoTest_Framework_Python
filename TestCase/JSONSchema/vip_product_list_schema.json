@@ -1,0 +1,147 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        65383795.05987728
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "dolore voluptate ut commodo reprehenderit"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "card_title",
+          "vip_id",
+          "product_id",
+          "original_price",
+          "sale_price",
+          "tag",
+          "tag_color",
+          "focus_img",
+          "focus_out_img",
+          "pay_type"
+        ],
+        "properties": {
+          "card_title": {
+            "$id": "#/properties/data/items/properties/card_title",
+            "type": "string",
+            "title": "The Card_title Schema",
+            "default": "",
+            "examples": [
+              "sed dolor ut"
+            ]
+          },
+          "vip_id": {
+            "$id": "#/properties/data/items/properties/vip_id",
+            "type": "string",
+            "title": "The Vip_id Schema",
+            "default": "",
+            "examples": [
+              "Ut Lorem minim mollit"
+            ]
+          },
+          "product_id": {
+            "$id": "#/properties/data/items/properties/product_id",
+            "type": "string",
+            "title": "The Product_id Schema",
+            "default": "",
+            "examples": [
+              "incididunt eu"
+            ]
+          },
+          "original_price": {
+            "$id": "#/properties/data/items/properties/original_price",
+            "type": "number",
+            "title": "The Original_price Schema",
+            "default": 0.0,
+            "examples": [
+              -99296384.64984722
+            ]
+          },
+          "sale_price": {
+            "$id": "#/properties/data/items/properties/sale_price",
+            "type": "number",
+            "title": "The Sale_price Schema",
+            "default": 0.0,
+            "examples": [
+              26637865.25385423
+            ]
+          },
+          "tag": {
+            "$id": "#/properties/data/items/properties/tag",
+            "type": "string",
+            "title": "The Tag Schema",
+            "default": "",
+            "examples": [
+              "quis incididunt"
+            ]
+          },
+          "tag_color": {
+            "$id": "#/properties/data/items/properties/tag_color",
+            "type": "string",
+            "title": "The Tag_color Schema",
+            "default": "",
+            "examples": [
+              "adipisicing ad in"
+            ]
+          },
+          "focus_img": {
+            "$id": "#/properties/data/items/properties/focus_img",
+            "type": "string",
+            "title": "The Focus_img Schema",
+            "default": "",
+            "examples": [
+              "Excepteur nisi conse"
+            ]
+          },
+          "focus_out_img": {
+            "$id": "#/properties/data/items/properties/focus_out_img",
+            "type": "string",
+            "title": "The Focus_out_img Schema",
+            "default": "",
+            "examples": [
+              "in veniam cupidatat occaecat magna"
+            ]
+          },
+          "pay_type": {
+            "$id": "#/properties/data/items/properties/pay_type",
+            "type": "string",
+            "title": "The Pay_type Schema",
+            "default": "",
+            "examples": [
+              "ut"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

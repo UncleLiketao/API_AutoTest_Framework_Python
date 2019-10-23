@@ -1,0 +1,343 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        -93361240.85969311
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "quis sed in"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "contentId",
+        "sourceFrom",
+        "score",
+        "videoType",
+        "videoName",
+        "payment",
+        "tag",
+        "duration",
+        "describe",
+        "img",
+        "videoInfo",
+        "episodes",
+        "recommend"
+      ],
+      "properties": {
+        "contentId": {
+          "$id": "#/properties/data/properties/contentId",
+          "type": "string",
+          "title": "The Contentid Schema",
+          "default": "",
+          "examples": [
+            "fugiat tempor a"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sourceFrom": {
+          "$id": "#/properties/data/properties/sourceFrom",
+          "type": "number",
+          "title": "The Sourcefrom Schema",
+          "default": 0.0,
+          "examples": [
+            50796184.08482954
+          ]
+        },
+        "score": {
+          "$id": "#/properties/data/properties/score",
+          "type": "string",
+          "title": "The Score Schema",
+          "default": "",
+          "examples": [
+            "esse incididunt ut deserunt in"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "videoType": {
+          "$id": "#/properties/data/properties/videoType",
+          "type": "string",
+          "title": "The Videotype Schema",
+          "default": "",
+          "examples": [
+            "minim exercitation"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "videoName": {
+          "$id": "#/properties/data/properties/videoName",
+          "type": "string",
+          "title": "The Videoname Schema",
+          "default": "",
+          "examples": [
+            "nulla anim cupidatat magna"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "payment": {
+          "$id": "#/properties/data/properties/payment",
+          "type": "number",
+          "title": "The Payment Schema",
+          "default": 0.0,
+          "examples": [
+            -86528657.29462
+          ]
+        },
+        "tag": {
+          "$id": "#/properties/data/properties/tag",
+          "type": "string",
+          "title": "The Tag Schema",
+          "default": "",
+          "examples": [
+            "ea"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "duration": {
+          "$id": "#/properties/data/properties/duration",
+          "type": "number",
+          "title": "The Duration Schema",
+          "default": 0.0,
+          "examples": [
+            -23709821.624382064
+          ]
+        },
+        "describe": {
+          "$id": "#/properties/data/properties/describe",
+          "type": "string",
+          "title": "The Describe Schema",
+          "default": "",
+          "examples": [
+            "ipsum nulla dolore"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "img": {
+          "$id": "#/properties/data/properties/img",
+          "type": "string",
+          "title": "The Img Schema",
+          "default": "",
+          "examples": [
+            "dolor laboris"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "videoInfo": {
+          "$id": "#/properties/data/properties/videoInfo",
+          "type": "array",
+          "title": "The Videoinfo Schema",
+          "items": {
+            "$id": "#/properties/data/properties/videoInfo/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "k",
+              "v"
+            ],
+            "properties": {
+              "k": {
+                "$id": "#/properties/data/properties/videoInfo/items/properties/k",
+                "type": "string",
+                "title": "The K Schema",
+                "default": "",
+                "examples": [
+                  "eu fugiat"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "v": {
+                "$id": "#/properties/data/properties/videoInfo/items/properties/v",
+                "type": "string",
+                "title": "The V Schema",
+                "default": "",
+                "examples": [
+                  "aute sit deserunt"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "episodes": {
+          "$id": "#/properties/data/properties/episodes",
+          "type": "array",
+          "title": "The Episodes Schema",
+          "items": {
+            "$id": "#/properties/data/properties/episodes/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "childId",
+              "duration",
+              "name",
+              "payType",
+              "intent",
+              "num",
+              "describe"
+            ],
+            "properties": {
+              "childId": {
+                "$id": "#/properties/data/properties/episodes/items/properties/childId",
+                "type": "string",
+                "title": "The Childid Schema",
+                "default": "",
+                "examples": [
+                  "cillum esse anim"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "duration": {
+                "$id": "#/properties/data/properties/episodes/items/properties/duration",
+                "type": "number",
+                "title": "The Duration Schema",
+                "default": 0.0,
+                "examples": [
+                  -30471021.18288243
+                ]
+              },
+              "name": {
+                "$id": "#/properties/data/properties/episodes/items/properties/name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "no"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "payType": {
+                "$id": "#/properties/data/properties/episodes/items/properties/payType",
+                "type": "number",
+                "title": "The Paytype Schema",
+                "default": 0.0,
+                "examples": [
+                  -74661200.4911785
+                ]
+              },
+              "intent": {
+                "$id": "#/properties/data/properties/episodes/items/properties/intent",
+                "type": "string",
+                "title": "The Intent Schema",
+                "default": "",
+                "examples": [
+                  "tempor moll"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "num": {
+                "$id": "#/properties/data/properties/episodes/items/properties/num",
+                "type": "number",
+                "title": "The Num Schema",
+                "default": 0.0,
+                "examples": [
+                  -1273589.3152854443
+                ]
+              },
+              "describe": {
+                "$id": "#/properties/data/properties/episodes/items/properties/describe",
+                "type": "string",
+                "title": "The Describe Schema",
+                "default": "",
+                "examples": [
+                  "e"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "recommend": {
+          "$id": "#/properties/data/properties/recommend",
+          "type": "array",
+          "title": "The Recommend Schema",
+          "items": {
+            "$id": "#/properties/data/properties/recommend/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "img",
+              "title",
+              "mark",
+              "intent",
+              "openType"
+            ],
+            "properties": {
+              "img": {
+                "$id": "#/properties/data/properties/recommend/items/properties/img",
+                "type": "string",
+                "title": "The Img Schema",
+                "default": "",
+                "examples": [
+                  "nulla mollit id"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "title": {
+                "$id": "#/properties/data/properties/recommend/items/properties/title",
+                "type": "string",
+                "title": "The Title Schema",
+                "default": "",
+                "examples": [
+                  "Excepteur nisi"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "mark": {
+                "$id": "#/properties/data/properties/recommend/items/properties/mark",
+                "type": "number",
+                "title": "The Mark Schema",
+                "default": 0.0,
+                "examples": [
+                  36380261.93419352
+                ]
+              },
+              "intent": {
+                "$id": "#/properties/data/properties/recommend/items/properties/intent",
+                "type": "string",
+                "title": "The Intent Schema",
+                "default": "",
+                "examples": [
+                  "laborum magna"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "openType": {
+                "$id": "#/properties/data/properties/recommend/items/properties/openType",
+                "type": "number",
+                "title": "The Opentype Schema",
+                "default": 0.0,
+                "examples": [
+                  27346350.764244676
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

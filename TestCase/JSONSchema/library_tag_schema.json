@@ -1,0 +1,67 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "code",
+    "msg",
+    "data"
+  ],
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "number",
+      "title": "The Code Schema",
+      "default": 0.0,
+      "examples": [
+        8149428.15152362
+      ]
+    },
+    "msg": {
+      "$id": "#/properties/msg",
+      "type": "string",
+      "title": "The Msg Schema",
+      "default": "",
+      "examples": [
+        "irure sint magna commodo"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "$id": "#/properties/data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "tagId",
+          "tagName"
+        ],
+        "properties": {
+          "tagId": {
+            "$id": "#/properties/data/items/properties/tagId",
+            "type": "number",
+            "title": "The Tagid Schema",
+            "default": 0.0,
+            "examples": [
+              -68201357.84372301
+            ]
+          },
+          "tagName": {
+            "$id": "#/properties/data/items/properties/tagName",
+            "type": "string",
+            "title": "The Tagname Schema",
+            "default": "",
+            "examples": [
+              "deserunt incididu"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
