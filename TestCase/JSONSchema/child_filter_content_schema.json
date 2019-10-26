@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "sit culpa dolor"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -75,8 +74,7 @@
                 "default": "",
                 "examples": [
                   "laboris incididunt irure adipisicing proident"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "img": {
                 "$id": "#/properties/data/properties/list/items/properties/img",
@@ -85,8 +83,7 @@
                 "default": "",
                 "examples": [
                   "ullamco et proident"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "w": {
                 "$id": "#/properties/data/properties/list/items/properties/w",
@@ -113,8 +110,7 @@
                 "default": "",
                 "examples": [
                   "esse culpa ipsum adipisicing tem"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_type": {
                 "$id": "#/properties/data/properties/list/items/properties/op_type",
@@ -132,8 +128,7 @@
                 "default": "",
                 "examples": [
                   "commodo fugiat"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apktip": {
                 "$id": "#/properties/data/properties/list/items/properties/op_apktip",
@@ -142,8 +137,7 @@
                 "default": "",
                 "examples": [
                   "enim anim ut"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apkname": {
                 "$id": "#/properties/data/properties/list/items/properties/op_apkname",
@@ -152,8 +146,7 @@
                 "default": "",
                 "examples": [
                   "tempor"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apkpackage": {
                 "$id": "#/properties/data/properties/list/items/properties/op_apkpackage",
@@ -162,8 +155,7 @@
                 "default": "",
                 "examples": [
                   "nulla amet"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }

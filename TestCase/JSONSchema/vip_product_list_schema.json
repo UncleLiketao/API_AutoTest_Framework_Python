@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "dolore voluptate ut commodo reprehenderit"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",

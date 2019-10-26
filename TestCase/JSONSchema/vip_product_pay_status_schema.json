@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "veniam adipisicing"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -46,8 +45,7 @@
           "default": "",
           "examples": [
             "qui veniam et"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "qr_url": {
           "$id": "#/properties/data/properties/qr_url",
@@ -56,8 +54,7 @@
           "default": "",
           "examples": [
             "exercitation pariatur esse"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "expire_time": {
           "$id": "#/properties/data/properties/expire_time",

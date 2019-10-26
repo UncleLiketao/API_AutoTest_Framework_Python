@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "consectetur Lorem aliqua id"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -59,8 +58,7 @@
           "default": "",
           "examples": [
             "tempor ipsum Lorem"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "guide": {
           "$id": "#/properties/data/properties/guide",
@@ -69,8 +67,7 @@
           "default": "",
           "examples": [
             "ut in Lorem"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "guideTips": {
           "$id": "#/properties/data/properties/guideTips",
@@ -79,8 +76,7 @@
           "default": "",
           "examples": [
             "ex mollit elit dolor"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "isRecommend": {
           "$id": "#/properties/data/properties/isRecommend",
@@ -89,8 +85,7 @@
           "default": "",
           "examples": [
             "aute quis"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "ui_mode": {
           "$id": "#/properties/data/properties/ui_mode",
@@ -133,8 +128,7 @@
                 "default": "",
                 "examples": [
                   "voluptate elit labore"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "img": {
                 "$id": "#/properties/data/properties/videos/items/properties/img",
@@ -143,8 +137,7 @@
                 "default": "",
                 "examples": [
                   "aliquip nostrud tempor"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "w": {
                 "$id": "#/properties/data/properties/videos/items/properties/w",
@@ -171,8 +164,7 @@
                 "default": "",
                 "examples": [
                   "ad"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_type": {
                 "$id": "#/properties/data/properties/videos/items/properties/op_type",
@@ -190,8 +182,7 @@
                 "default": "",
                 "examples": [
                   "proident cupidatat dolor"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apktip": {
                 "$id": "#/properties/data/properties/videos/items/properties/op_apktip",
@@ -200,8 +191,7 @@
                 "default": "",
                 "examples": [
                   "sed fugiat sunt E"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apkname": {
                 "$id": "#/properties/data/properties/videos/items/properties/op_apkname",
@@ -210,8 +200,7 @@
                 "default": "",
                 "examples": [
                   "eu voluptate adipisicing"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "op_apkpackage": {
                 "$id": "#/properties/data/properties/videos/items/properties/op_apkpackage",
@@ -220,8 +209,7 @@
                 "default": "",
                 "examples": [
                   "laboris qui ullamco sit"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "id": {
                 "$id": "#/properties/data/properties/videos/items/properties/id",
@@ -230,8 +218,7 @@
                 "default": "",
                 "examples": [
                   "ut sed sunt"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "group": {
                 "$id": "#/properties/data/properties/videos/items/properties/group",
@@ -240,8 +227,7 @@
                 "default": "",
                 "examples": [
                   "anim Ut"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "from": {
                 "$id": "#/properties/data/properties/videos/items/properties/from",
@@ -250,8 +236,7 @@
                 "default": "",
                 "examples": [
                   "sunt nisi"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "source_from": {
                 "$id": "#/properties/data/properties/videos/items/properties/source_from",
@@ -260,8 +245,7 @@
                 "default": "",
                 "examples": [
                   "eu consequat"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }

@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "quis sed in"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -56,8 +55,7 @@
           "default": "",
           "examples": [
             "fugiat tempor a"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "sourceFrom": {
           "$id": "#/properties/data/properties/sourceFrom",
@@ -75,8 +73,7 @@
           "default": "",
           "examples": [
             "esse incididunt ut deserunt in"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoType": {
           "$id": "#/properties/data/properties/videoType",
@@ -85,8 +82,7 @@
           "default": "",
           "examples": [
             "minim exercitation"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoName": {
           "$id": "#/properties/data/properties/videoName",
@@ -95,8 +91,7 @@
           "default": "",
           "examples": [
             "nulla anim cupidatat magna"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "payment": {
           "$id": "#/properties/data/properties/payment",
@@ -114,8 +109,7 @@
           "default": "",
           "examples": [
             "ea"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "duration": {
           "$id": "#/properties/data/properties/duration",
@@ -133,8 +127,7 @@
           "default": "",
           "examples": [
             "ipsum nulla dolore"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "img": {
           "$id": "#/properties/data/properties/img",
@@ -143,8 +136,7 @@
           "default": "",
           "examples": [
             "dolor laboris"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoInfo": {
           "$id": "#/properties/data/properties/videoInfo",
@@ -166,8 +158,7 @@
                 "default": "",
                 "examples": [
                   "eu fugiat"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "v": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/v",
@@ -176,8 +167,7 @@
                 "default": "",
                 "examples": [
                   "aute sit deserunt"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }
@@ -207,8 +197,7 @@
                 "default": "",
                 "examples": [
                   "cillum esse anim"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "duration": {
                 "$id": "#/properties/data/properties/episodes/items/properties/duration",
@@ -226,8 +215,7 @@
                 "default": "",
                 "examples": [
                   "no"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "payType": {
                 "$id": "#/properties/data/properties/episodes/items/properties/payType",
@@ -245,8 +233,7 @@
                 "default": "",
                 "examples": [
                   "tempor moll"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "num": {
                 "$id": "#/properties/data/properties/episodes/items/properties/num",
@@ -264,8 +251,7 @@
                 "default": "",
                 "examples": [
                   "e"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }
@@ -293,8 +279,7 @@
                 "default": "",
                 "examples": [
                   "nulla mollit id"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "title": {
                 "$id": "#/properties/data/properties/recommend/items/properties/title",
@@ -303,8 +288,7 @@
                 "default": "",
                 "examples": [
                   "Excepteur nisi"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "mark": {
                 "$id": "#/properties/data/properties/recommend/items/properties/mark",
@@ -322,8 +306,7 @@
                 "default": "",
                 "examples": [
                   "laborum magna"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "openType": {
                 "$id": "#/properties/data/properties/recommend/items/properties/openType",

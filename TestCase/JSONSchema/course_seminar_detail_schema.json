@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "aliquip nulla"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -56,8 +55,7 @@
           "default": "",
           "examples": [
             "est sint"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "sourceFrom": {
           "$id": "#/properties/data/properties/sourceFrom",
@@ -75,8 +73,7 @@
           "default": "",
           "examples": [
             "dolore quis"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoType": {
           "$id": "#/properties/data/properties/videoType",
@@ -85,8 +82,7 @@
           "default": "",
           "examples": [
             "nostrud"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoName": {
           "$id": "#/properties/data/properties/videoName",
@@ -95,8 +91,7 @@
           "default": "",
           "examples": [
             "veniam sunt"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "payment": {
           "$id": "#/properties/data/properties/payment",
@@ -114,8 +109,7 @@
           "default": "",
           "examples": [
             "aliquip nostrud sunt quis"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "duration": {
           "$id": "#/properties/data/properties/duration",
@@ -133,8 +127,7 @@
           "default": "",
           "examples": [
             "id non do est"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "img": {
           "$id": "#/properties/data/properties/img",
@@ -143,8 +136,7 @@
           "default": "",
           "examples": [
             "pariatur Excepteur ea"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "videoInfo": {
           "$id": "#/properties/data/properties/videoInfo",
@@ -166,8 +158,7 @@
                 "default": "",
                 "examples": [
                   "cupidatat dolor laboris"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "v": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/v",
@@ -176,8 +167,7 @@
                 "default": "",
                 "examples": [
                   "cu"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }
@@ -207,8 +197,7 @@
                 "default": "",
                 "examples": [
                   "irure"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "duration": {
                 "$id": "#/properties/data/properties/episodes/items/properties/duration",
@@ -226,8 +215,7 @@
                 "default": "",
                 "examples": [
                   "ut labore sunt do"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "payType": {
                 "$id": "#/properties/data/properties/episodes/items/properties/payType",
@@ -245,8 +233,7 @@
                 "default": "",
                 "examples": [
                   "labore nisi"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "num": {
                 "$id": "#/properties/data/properties/episodes/items/properties/num",
@@ -264,8 +251,7 @@
                 "default": "",
                 "examples": [
                   "culpa consectetur sunt dolor"
-                ],
-                "pattern": "^(.*)$"
+                ]
               }
             }
           }

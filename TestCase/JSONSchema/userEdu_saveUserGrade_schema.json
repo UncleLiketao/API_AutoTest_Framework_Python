@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "minim aliquip"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -44,8 +43,7 @@
           "default": "",
           "examples": [
             "Lorem"
-          ],
-          "pattern": "^(.*)$"
+          ]
         }
       }
     }

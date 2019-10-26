@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "adipisicing no"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -45,8 +44,7 @@
           "default": "",
           "examples": [
             "consectetur adipisicing"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "efunResCode": {
           "$id": "#/properties/data/properties/efunResCode",

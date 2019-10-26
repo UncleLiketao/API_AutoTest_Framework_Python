@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "consectetur Duis Lorem nulla"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -51,8 +50,7 @@
             "default": "",
             "examples": [
               "in sed ut ad"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "img": {
             "$id": "#/properties/data/items/properties/img",
@@ -61,8 +59,7 @@
             "default": "",
             "examples": [
               "sed ad magna est"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "classify": {
             "$id": "#/properties/data/items/properties/classify",
@@ -104,8 +101,7 @@
                   "default": "",
                   "examples": [
                     "aliquip amet ut"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "poster": {
                   "$id": "#/properties/data/items/properties/items/items/properties/poster",
@@ -114,8 +110,7 @@
                   "default": "",
                   "examples": [
                     "consequat incididunt"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "style": {
                   "$id": "#/properties/data/items/properties/items/items/properties/style",
@@ -160,8 +155,7 @@
                   "default": "",
                   "examples": [
                     "proident velit"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "opApkName": {
                   "$id": "#/properties/data/items/properties/items/items/properties/opApkName",
@@ -170,8 +164,7 @@
                   "default": "",
                   "examples": [
                     "id aute nulla"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "opApkPkg": {
                   "$id": "#/properties/data/items/properties/items/items/properties/opApkPkg",
@@ -180,8 +173,7 @@
                   "default": "",
                   "examples": [
                     "sunt sint adipisicing proident"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "opApkUrl": {
                   "$id": "#/properties/data/items/properties/items/items/properties/opApkUrl",
@@ -190,8 +182,7 @@
                   "default": "",
                   "examples": [
                     "deserunt aliqua sint"
-                  ],
-                  "pattern": "^(.*)$"
+                  ]
                 },
                 "x": {
                   "$id": "#/properties/data/items/properties/items/items/properties/x",

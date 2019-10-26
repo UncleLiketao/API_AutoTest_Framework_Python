@@ -6,7 +6,7 @@ from Common import Assert
 
 
 class TestGradeList:
-    def test_repsonse_data_format(self):
+    def test_response_data_format(self):
         """
         用例描述：年级列表接口默认参数状态码返回和返回格式JsonSchema格式验证
         :return:
@@ -26,5 +26,5 @@ class TestGradeList:
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pass

@@ -9,7 +9,6 @@ import os
 
 
 class Config:
-
     # path
     path_dir = str(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 
@@ -20,13 +19,12 @@ class Config:
         self.config = ConfigParser()
         self.log = Log.MyLog()
 
-        self.xml_report_path = Config.path_dir+'/Report/xml'
-        self.html_report_path = Config.path_dir+'/Report/html'
-        self.json_schema_path = Config.path_dir+'/TestCase/JSONschema'
+        self.xml_report_path = Config.path_dir + '/Report/xml'
+        self.html_report_path = Config.path_dir + '/Report/html'
+        self.json_schema_path = Config.path_dir + '/TestCase/JSONschema'
         self.debug_gossapi_host = "http://gossapit.xgimi.com"
         self.debug_goss_host = "http://goss.t.xgimi.com"
         self.debug_headers = {"Content-Type": "application/x-www-form-urlencoded"}
-
 
     def get_conf(self, title, value):
         """

@@ -6,7 +6,7 @@ from Common import Assert
 
 
 class TestCourseDetail:
-    def test_repsonse_data_format(self):
+    def test_response_data_format(self):
         """
         用例描述：课程详情接口状态码返回
         :return:
@@ -26,5 +26,5 @@ class TestCourseDetail:
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pass

@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "cillum nulla mollit Lorem"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -48,8 +47,7 @@
           "default": "",
           "examples": [
             "sit sint"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "refresh_token": {
           "$id": "#/properties/data/properties/refresh_token",
@@ -58,8 +56,7 @@
           "default": "",
           "examples": [
             "veniam Excepteur esse labore dolore"
-          ],
-          "pattern": "^(.*)$"
+          ]
         },
         "expires_in": {
           "$id": "#/properties/data/properties/expires_in",
@@ -86,8 +83,7 @@
           "default": "",
           "examples": [
             "in"
-          ],
-          "pattern": "^(.*)$"
+          ]
         }
       }
     }

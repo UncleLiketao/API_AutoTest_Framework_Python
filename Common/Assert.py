@@ -48,7 +48,8 @@ class Assertions:
             return True
 
         except:
-            self.log.error("Response body msg != expected_msg, expected_msg is %s, body_msg is %s" % (expected_msg, body_msg))
+            self.log.error(
+                "Response body msg != expected_msg, expected_msg is %s, body_msg is %s" % (expected_msg, body_msg))
             Consts.RESULT_LIST.append('fail')
 
             raise
@@ -92,7 +93,7 @@ class Assertions:
     def assert_time(self, time, expected_time):
         """
         验证response body响应时间小于预期最大响应时间,单位：毫秒
-        :param body:
+        :param time:
         :param expected_time:
         :return:
         """

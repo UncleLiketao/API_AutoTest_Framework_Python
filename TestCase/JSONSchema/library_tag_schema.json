@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "irure sint magna commodo"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",

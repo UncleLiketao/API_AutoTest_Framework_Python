@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "consectetur ipsum officia quis labori"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -84,8 +83,7 @@
           "default": "",
           "examples": [
             "enim cupidatat anim"
-          ],
-          "pattern": "^(.*)$"
+          ]
         }
       }
     }

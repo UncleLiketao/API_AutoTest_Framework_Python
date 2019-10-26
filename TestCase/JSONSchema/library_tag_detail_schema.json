@@ -26,8 +26,7 @@
       "default": "",
       "examples": [
         "do ad "
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",
@@ -71,8 +70,7 @@
                 "default": "",
                 "examples": [
                   "in Lorem dolor"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "title": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/title",
@@ -81,8 +79,7 @@
                 "default": "",
                 "examples": [
                   "aute esse fugiat"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "img": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/img",
@@ -91,8 +88,7 @@
                 "default": "",
                 "examples": [
                   "ullam"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "intent": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/intent",
@@ -101,8 +97,7 @@
                 "default": "",
                 "examples": [
                   "dolor id laboris"
-                ],
-                "pattern": "^(.*)$"
+                ]
               },
               "sourceFrom": {
                 "$id": "#/properties/data/properties/videoInfo/items/properties/sourceFrom",

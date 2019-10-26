@@ -5,8 +5,8 @@ from Conf.Config import Config
 from Common import Assert
 
 
-class TestChildBroadCast:
-    def test_repsonse_data_format(self):
+class TestChildBroadCastList:
+    def test_response_data_format(self):
         """
         用例描述：【新版儿童模式】获取画面静止时随机播放内容接口默认参数状态码返回和返回格式JsonSchema格式验证
         :return:
@@ -26,5 +26,5 @@ class TestChildBroadCast:
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pass

@@ -14,10 +14,7 @@
       "$id": "#/properties/code",
       "type": "number",
       "title": "The Code Schema",
-      "default": 0.0,
-      "examples": [
-        73241560.2706717
-      ]
+      "default": 0.0
     },
     "msg": {
       "$id": "#/properties/msg",
@@ -26,8 +23,7 @@
       "default": "",
       "examples": [
         "laboris"
-      ],
-      "pattern": "^(.*)$"
+      ]
     },
     "data": {
       "$id": "#/properties/data",

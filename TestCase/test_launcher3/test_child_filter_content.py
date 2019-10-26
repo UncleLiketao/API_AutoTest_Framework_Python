@@ -6,7 +6,7 @@ from Common import Assert
 
 
 class TestChildFilterContent:
-    def test_repsonse_data_format(self):
+    def test_response_data_format(self):
         """
         用例描述：【新版儿童模式】过滤器内容接口默认参数状态码返回
         :return:
@@ -28,5 +28,5 @@ class TestChildFilterContent:
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pass

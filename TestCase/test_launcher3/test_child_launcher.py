@@ -6,7 +6,7 @@ from Common import Assert
 
 
 class TestChildLauncher:
-    def test_repsonse_data_format(self):
+    def test_response_data_format(self):
         """
         用例描述：【新版儿童模式】桌面主页接口默认参数状态码返回
         :return:
@@ -26,5 +26,5 @@ class TestChildLauncher:
         assert test.assert_jsonschema(res.json(), schema)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pass
